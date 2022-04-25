@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lyt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_loop"
+            android:layout_width="0dp"
+            android:layout_height="44sp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_all_inclusive" />
+
+        <ImageView
+            android:id="@+id/img_happy"
+            android:layout_width="0dp"
+            android:layout_height="44sp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_happy" />
+
+        <ImageView
+            android:id="@+id/img_sun"
+            android:layout_width="0dp"
+            android:layout_height="44sp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sunny" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt_1"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="15sp"
+        android:gravity="center"
+        android:text="@string/ol_kotlin"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/text_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="15sp"
+        android:gravity="center"
+        android:text="@string/motivation"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/text_phrase"
+        android:layout_centerHorizontal="true"
+        android:background="@color/purple_200"
+        android:elevation="5dp"
+        />
+
+    <Button
+        android:backgroundTint="@color/purple_200"
+        android:id="@+id/button_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nova_frase" />
+
+</RelativeLayout>
